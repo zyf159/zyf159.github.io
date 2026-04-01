@@ -209,6 +209,28 @@ body {
     margin-top: 0.5rem;
 }
 
+.project-actions {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.project-actions .btn {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.project-actions .btn:hover {
+    background-color: #ff6b6b;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(255, 107, 107, 0.3);
+}
+
 /* 数据可视化部分 */
 .visualization {
     padding: 5rem 0;
