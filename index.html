@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>郑宇凡 - 个人作品集</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">zhengyufan.com</h1>
+            <ul class="nav-links">
+                <li><a href="#home">首页</a></li>
+                <li><a href="#projects">项目</a></li>
+                <li><a href="#about">关于我</a></li>
+                <li><a href="#contact">联系我</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 首页 -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>欢迎来到 郑宇凡 的个人作品集</h2>
+            <p>数据爬取与分析项目展示</p>
+            <a href="#projects" class="btn">查看项目</a>
+        </div>
+    </section>
+
+    <!-- 项目展示 -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>我的项目</h2>
+            <p class="subtitle">数据爬取与分析相关项目</p>
+            
+            <!-- 项目卡片 -->
+            <div class="project-grid">
+                <!-- 项目1 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>政策数据爬取与Excel生成</h3>
+                        <span class="project-tag">Python</span>
+                    </div>
+                    <div class="project-content">
+                        <p>该项目用于爬取平顶山市政府网站的政策信息，将数据保存为JSON格式，并生成Excel文件。</p>
+                        <ul class="file-list">
+                            <li>
+                                <a href="1.py" download class="file-link">
+                                    <span class="file-icon">📄</span>
+                                    <span class="file-name">1.py</span>
+                                </a>
+                                <p class="file-desc">爬取政策列表，保存为JSON格式，并生成Excel文件</p>
+                            </li>
+                            <li>
+                                <a href="file.json" download class="file-link">
+                                    <span class="file-icon">📄</span>
+                                    <span class="file-name">file.json</span>
+                                </a>
+                                <p class="file-desc">爬取的政策数据，包含标题、URL、发布日期等信息</p>
+                            </li>
+                            <li>
+                                <a href="policy_data.xlsx" download class="file-link">
+                                    <span class="file-icon">📄</span>
+                                    <span class="file-name">policy_data.xlsx</span>
+                                </a>
+                                <p class="file-desc">生成的Excel文件，包含所有政策数据</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 项目2 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>政策数据爬取与MySQL存储</h3>
+                        <span class="project-tag">Python + MySQL</span>
+                    </div>
+                    <div class="project-content">
+                        <p>该项目在第一个项目的基础上，增加了将爬取的数据保存到MySQL数据库的功能。</p>
+                        <ul class="file-list">
+                            <li>
+                                <a href="2.py" download class="file-link">
+                                    <span class="file-icon">📄</span>
+                                    <span class="file-name">2.py</span>
+                                </a>
+                                <p class="file-desc">爬取政策数据并保存到MySQL数据库</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 项目3 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Excel数据清理工具</h3>
+                        <span class="project-tag">Python</span>
+                    </div>
+                    <div class="project-content">
+                        <p>该工具用于检查Excel文件中的重复值和空列，并进行清理。</p>
+                        <ul class="file-list">
+                            <li>
+                                <a href="clean_excel.py" download class="file-link">
+                                    <span class="file-icon">📄</span>
+                                    <span class="file-name">clean_excel.py</span>
+                                </a>
+                                <p class="file-desc">检查并清理Excel文件中的重复值和空列</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 数据可视化 -->
+    <section class="visualization">
+        <div class="container">
+            <h2>数据可视化</h2>
+            <p class="subtitle">政策数据统计分析</p>
+            <div class="chart-container">
+                <canvas id="policyChart"></canvas>
+            </div>
+        </div>
+    </section>
+
+    <!-- 关于我 -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>关于我</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>我是郑宇凡，一名数据爬取与分析爱好者。我喜欢通过编写代码来获取和分析数据，解决实际问题。</p>
+                    <p>本作品集展示了我在数据爬取、处理和可视化方面的项目。我使用Python、Selenium、BeautifulSoup等工具来爬取网页数据，并使用pandas、Excel和MySQL来存储和分析数据。</p>
+                    <p>如果您对我的项目感兴趣，或者有任何合作机会，欢迎与我联系。</p>
+                </div>
+                <div class="about-skills">
+                    <h3>技能</h3>
+                    <ul>
+                        <li>Python</li>
+                        <li>Selenium</li>
+                        <li>BeautifulSoup</li>
+                        <li>pandas</li>
+                        <li>MySQL</li>
+                        <li>数据可视化</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系我 -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>联系我</h2>
+            <p class="subtitle">如果您有任何问题或合作意向，欢迎与我联系</p>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <span class="contact-icon">📧</span>
+                    <span>email@example.com</span>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-icon">📱</span>
+                    <span>138-0000-0000</span>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-icon">🌐</span>
+                    <span>zhengyufan.com</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 郑宇凡. 保留所有权利.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
